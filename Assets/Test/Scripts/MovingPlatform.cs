@@ -8,15 +8,14 @@ public class MovingPlatform : MonoBehaviour
     [SerializeField] float timer = 0.0f, maxTime = 5.0f;
     [SerializeField] bool canMove = true;
     [SerializeField] Rigidbody rb = null;
-    [SerializeField] Vector3 velocity = Vector3.zero, result = Vector3.zero;
 
     void Start()
     {
         transform.position = startPosition;
-         rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         Move();
     }
@@ -34,11 +33,8 @@ public class MovingPlatform : MonoBehaviour
         }
 
         float _t = EaseInOutCirc(timer / maxTime);
-        result = startPosition - endPosition;
-        float _factor = result.y < 0.0f ? -1.0f : 1.0f;
-        velocity = Vector3.up * _t * speed * _factor;
-        rb.AddForce(velocity, ForceMode.Impulse);
-        //transform.position = Vector3.Lerp(startPosition, endPosition, _t);
+        Vector3 _targetPos = Vector3.Lerp(startPosition, endPosition, _t);
+        rb.MovePosition(_targetPos);
     }
 
     void SwitchVector(ref Vector3 _start, ref Vector3 _end)
@@ -64,7 +60,7 @@ public class MovingPlatform : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(endPosition, 0.5f);
         Gizmos.color = Color.blue;
-        Gizmos.DrawLine(transform.position, endPosition);
+        Gizmos.DrawLine(startPosition, endPosition);
         Gizmos.color = Color.white;
     }
 }
