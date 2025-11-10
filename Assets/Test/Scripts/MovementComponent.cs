@@ -12,7 +12,6 @@ public class MovementComponent : MonoBehaviour
     [SerializeField] bool isGrounded = false;
 	[SerializeField] Rigidbody rb = null;
     [SerializeField] float groundCheckDistance = 0.5f;
-    [SerializeField] CinemachineRotationComposer composer = null;
 
     void Start()
 	{

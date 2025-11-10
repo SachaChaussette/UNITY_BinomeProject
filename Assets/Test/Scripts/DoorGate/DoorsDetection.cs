@@ -9,7 +9,6 @@ public class DoorsDetection : MonoBehaviour
 
     [SerializeField] SphereCollider collider = null;
     [SerializeField] bool isPlayerNear = false;
-    [SerializeField] Door leftDoor = null, rightDoor = null;
 
     private void Start()
     {

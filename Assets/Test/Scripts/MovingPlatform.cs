@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
 {
-    [SerializeField] float speed = 5.0f;
     [SerializeField] Vector3 startPosition = Vector3.zero, endPosition = Vector3.zero;
     [SerializeField] float timer = 0.0f, maxTime = 5.0f;
     [SerializeField] bool canMove = true;
