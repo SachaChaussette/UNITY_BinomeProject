@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F2C9BD1B-5038-FA90-F7B1-62EE1E8D422F}</ProjectGuid>
+    <ProjectGuid>{7565D401-77B9-8507-9C74-F492404DA865}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -73,6 +73,7 @@
     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabExporter.cs" />
     <Compile Include="Assets\BinomeProjectFolder\Inputs\IAA_Inputs.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabUI.cs" />
+    <Compile Include="Assets\BinomeProjectFolder\Scripts\Player\CameraShake.cs" />
     <Compile Include="Assets\BinomeProjectFolder\Scripts\DoorGate\DoorsDetection.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\BinomeProjectFolder\Scripts\MovingPlatform.cs" />

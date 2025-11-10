@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public class DashComponent : MonoBehaviour
 {
@@ -11,11 +12,30 @@ public class DashComponent : MonoBehaviour
     [SerializeField] bool canDash = true, isCharging = false;
     [SerializeField] float currentTime = 0.0f, maxTime = 3.0f;
     [SerializeField] float force = 10.0f;
+    [SerializeField] CameraShake cameraShake;
+
+
+
+    public bool IsFullCharge()
+    {
+        return currentTime >= maxTime;
+    }
 
     // Update is called once per frame
     void Update()
     {
         UpdateTime();
+        float _chargeRatio = currentTime / maxTime;
+        cameraShake.SetChargeRatio(_chargeRatio);
+
+        if (IsFullCharge())
+        {
+            cameraShake.StartShake(.4f);
+        }
+        else
+        {
+            cameraShake.StopShake();
+        }
     }
 
     public void Init(InputAction _dashAction)
@@ -40,6 +60,7 @@ public class DashComponent : MonoBehaviour
         isCharging = false;
 
         owner.Rigidbody.AddForce(owner.transform.forward * (force * EaseOutCirc(currentTime / maxTime)), ForceMode.Impulse);
+        currentTime = 0;
     }
 
     void UpdateTime()

@@ -1,42 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Code\\Unity\\UNITY_Test\\",
+  "WorkspaceRootPath": "D:\\Maxime\\P2\\Github\\UNITY_Test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|D:\\Code\\Unity\\UNITY_Test\\assets\\test\\scripts\\elevator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|solutionrelative:assets\\test\\scripts\\elevator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|d:\\maxime\\p2\\github\\unity_test\\assets\\binomeprojectfolder\\scripts\\player\\dashcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|solutionrelative:assets\\binomeprojectfolder\\scripts\\player\\dashcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|d:\\code\\unity\\unity_test\\assets\\test\\scripts\\elevatordoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|solutionrelative:assets\\test\\scripts\\elevatordoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|d:\\maxime\\p2\\github\\unity_test\\assets\\binomeprojectfolder\\scripts\\player\\camerashake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|solutionrelative:assets\\binomeprojectfolder\\scripts\\player\\camerashake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|d:\\code\\unity\\unity_test\\assets\\test\\scripts\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|solutionrelative:assets\\test\\scripts\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\Elevator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|D:\\Code\\Unity\\UNITY_Test\\assets\\test\\scripts\\movingplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|solutionrelative:assets\\test\\scripts\\movingplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\ElevatorDoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|D:\\Code\\Unity\\UNITY_Test\\assets\\test\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|solutionrelative:assets\\test\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|D:\\Code\\Unity\\UNITY_Test\\assets\\test\\scripts\\doorsdetection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|solutionrelative:assets\\test\\scripts\\doorsdetection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\MovementComponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|D:\\Code\\Unity\\UNITY_Test\\assets\\test\\scripts\\inputcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|solutionrelative:assets\\test\\scripts\\inputcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\InputComponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|D:\\Code\\Unity\\UNITY_Test\\assets\\test\\scripts\\movementcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|solutionrelative:assets\\test\\scripts\\movementcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\Door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|D:\\Code\\Unity\\UNITY_Test\\assets\\test\\scripts\\pickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|solutionrelative:assets\\test\\scripts\\pickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\DoorsDetection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\Pickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\MovingPlatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,54 +45,77 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ElevatorDoor.cs",
-              "DocumentMoniker": "D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\ElevatorDoor.cs",
-              "RelativeDocumentMoniker": "Assets\\Test\\Scripts\\ElevatorDoor.cs",
-              "ToolTip": "D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\ElevatorDoor.cs",
-              "RelativeToolTip": "Assets\\Test\\Scripts\\ElevatorDoor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "DashComponent.cs",
+              "DocumentMoniker": "D:\\Maxime\\P2\\Github\\UNITY_Test\\Assets\\BinomeProjectFolder\\Scripts\\Player\\DashComponent.cs",
+              "RelativeDocumentMoniker": "Assets\\BinomeProjectFolder\\Scripts\\Player\\DashComponent.cs",
+              "ToolTip": "D:\\Maxime\\P2\\Github\\UNITY_Test\\Assets\\BinomeProjectFolder\\Scripts\\Player\\DashComponent.cs",
+              "RelativeToolTip": "Assets\\BinomeProjectFolder\\Scripts\\Player\\DashComponent.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAUwFEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T15:45:11.394Z",
+              "WhenOpened": "2025-11-10T15:01:08.675Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "CameraShake.cs",
+              "DocumentMoniker": "D:\\Maxime\\P2\\Github\\UNITY_Test\\Assets\\BinomeProjectFolder\\Scripts\\Player\\CameraShake.cs",
+              "RelativeDocumentMoniker": "Assets\\BinomeProjectFolder\\Scripts\\Player\\CameraShake.cs",
+              "ToolTip": "D:\\Maxime\\P2\\Github\\UNITY_Test\\Assets\\BinomeProjectFolder\\Scripts\\Player\\CameraShake.cs",
+              "RelativeToolTip": "Assets\\BinomeProjectFolder\\Scripts\\Player\\CameraShake.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T15:00:13.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ElevatorDoor.cs",
+              "DocumentMoniker": "D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\ElevatorDoor.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\ElevatorDoor.cs",
+              "ToolTip": "D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\ElevatorDoor.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\ElevatorDoor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T15:45:11.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Elevator.cs",
               "DocumentMoniker": "D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\Elevator.cs",
-              "RelativeDocumentMoniker": "Assets\\Test\\Scripts\\Elevator.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\Elevator.cs",
               "ToolTip": "D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\Elevator.cs",
-              "RelativeToolTip": "Assets\\Test\\Scripts\\Elevator.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC8AAAARAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\..\\..\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\Elevator.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T15:30:41.262Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-09T15:30:41.262Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Player.cs",
               "DocumentMoniker": "D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\Player.cs",
-              "RelativeDocumentMoniker": "Assets\\Test\\Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\Player.cs",
               "ToolTip": "D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\Player.cs",
-              "RelativeToolTip": "Assets\\Test\\Scripts\\Player.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\Player.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T17:06:17.311Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "MovementComponent.cs",
               "DocumentMoniker": "D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\MovementComponent.cs",
-              "RelativeDocumentMoniker": "Assets\\Test\\Scripts\\MovementComponent.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\MovementComponent.cs",
               "ToolTip": "D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\MovementComponent.cs",
-              "RelativeToolTip": "Assets\\Test\\Scripts\\MovementComponent.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\MovementComponent.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T17:06:08.892Z"
@@ -103,58 +125,57 @@
               "DocumentIndex": 6,
               "Title": "InputComponent.cs",
               "DocumentMoniker": "D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\InputComponent.cs",
-              "RelativeDocumentMoniker": "Assets\\Test\\Scripts\\InputComponent.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\InputComponent.cs",
               "ToolTip": "D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\InputComponent.cs",
-              "RelativeToolTip": "Assets\\Test\\Scripts\\InputComponent.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\InputComponent.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T17:06:05.031Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Door.cs",
               "DocumentMoniker": "D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\Door.cs",
-              "RelativeDocumentMoniker": "Assets\\Test\\Scripts\\Door.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\Door.cs",
               "ToolTip": "D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\Door.cs",
-              "RelativeToolTip": "Assets\\Test\\Scripts\\Door.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\Door.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T15:10:04.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T15:10:04.78Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "DoorsDetection.cs",
               "DocumentMoniker": "D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\DoorsDetection.cs",
-              "RelativeDocumentMoniker": "Assets\\Test\\Scripts\\DoorsDetection.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\DoorsDetection.cs",
               "ToolTip": "D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\DoorsDetection.cs",
-              "RelativeToolTip": "Assets\\Test\\Scripts\\DoorsDetection.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\DoorsDetection.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAC0AAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T15:09:55.991Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Pickup.cs",
               "DocumentMoniker": "D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\Pickup.cs",
-              "RelativeDocumentMoniker": "Assets\\Test\\Scripts\\Pickup.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\Pickup.cs",
               "ToolTip": "D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\Pickup.cs",
-              "RelativeToolTip": "Assets\\Test\\Scripts\\Pickup.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\Pickup.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAAAEAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-07T21:02:46.708Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "MovingPlatform.cs",
               "DocumentMoniker": "D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\MovingPlatform.cs",
-              "RelativeDocumentMoniker": "Assets\\Test\\Scripts\\MovingPlatform.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\MovingPlatform.cs",
               "ToolTip": "D:\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\MovingPlatform.cs",
-              "RelativeToolTip": "Assets\\Test\\Scripts\\MovingPlatform.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Code\\Unity\\UNITY_Test\\Assets\\Test\\Scripts\\MovingPlatform.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAwwCcAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-07T16:56:11.934Z"
