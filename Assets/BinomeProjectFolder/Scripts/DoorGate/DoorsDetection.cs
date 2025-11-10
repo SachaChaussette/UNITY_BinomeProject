@@ -7,17 +7,17 @@ public class DoorsDetection : MonoBehaviour
 
     public FOnPlayerNear OnPlayerNear { get => onPlayerNear; set => onPlayerNear = value; }
 
-    [SerializeField] SphereCollider collider = null;
+    [SerializeField] SphereCollider sphereCollider = null;
     [SerializeField] bool isPlayerNear = false;
 
     private void Start()
     {
-        collider = GetComponent<SphereCollider>();
+        sphereCollider = GetComponent<SphereCollider>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (collider == null) return;
+        if (sphereCollider == null) return;
 
         if (!other.gameObject.GetComponent(typeof(Player))) return;
 
@@ -28,7 +28,7 @@ public class DoorsDetection : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (collider == null) return;
+        if (sphereCollider == null) return;
 
         if (!other.gameObject.GetComponent(typeof(Player))) return;
 
@@ -39,10 +39,10 @@ public class DoorsDetection : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        if(!collider) return;
+        if(!sphereCollider) return;
 
         Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position, collider.radius * transform.localScale.x);
+        Gizmos.DrawWireSphere(transform.position, sphereCollider.radius * transform.localScale.x);
         Gizmos.color = Color.white;
 
     }
