@@ -72,6 +72,7 @@
     <Compile Include="Assets\BinomeProjectFolder\Scripts\Player\Player.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabExporter.cs" />
     <Compile Include="Assets\BinomeProjectFolder\Inputs\IAA_Inputs.cs" />
+    <Compile Include="Assets\BinomeProjectFolder\Scripts\Player\DeathComponent.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabUI.cs" />
     <Compile Include="Assets\BinomeProjectFolder\Scripts\DoorGate\DoorsDetection.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
@@ -92,6 +93,7 @@
     <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFFlipTexture.shader" />
     <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFColorSpace.cginc" />
     <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFPackOccMetalRough.shader" />
+    <None Include="Assets\Import\SCI-FI_WALL\license.txt" />
     <None Include="Assets\Import\Sci-Fi_Elevator_with_Shield\license.txt" />
     <None Include="Assets\Sketchfab For Unity\Dependencies\Libraries\SketchfabPlugin.dll" />
     <None Include="Assets\Sketchfab For Unity\Dependencies\Libraries\Ionic.Zip.Unity.dll" />

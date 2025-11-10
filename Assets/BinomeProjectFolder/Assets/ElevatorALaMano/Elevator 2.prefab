@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7222193880961616586}
   - component: {fileID: 5724304672735665725}
   - component: {fileID: 6562125463956322853}
-  - component: {fileID: 5410622286408154724}
+  - component: {fileID: 5646425954987487751}
   m_Layer: 0
   m_Name: sci-fi door
   m_TagString: Untagged
@@ -87,8 +87,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5410622286408154724
-MeshCollider:
+--- !u!65 &5646425954987487751
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -105,10 +105,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2088423370225539377, guid: fea3da5973afa9e438362b57b7d2bd46, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 0.08481197, y: 0.08644818, z: 0.03}
+  m_Center: {x: 0.000000014901161, y: 0, z: -0.012}
 --- !u!1 &460507656017239693
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,7 +119,7 @@ GameObject:
   - component: {fileID: 3511517748664244070}
   - component: {fileID: 4158141823962725240}
   - component: {fileID: 3312674932879812914}
-  - component: {fileID: 5364841675860572377}
+  - component: {fileID: 3134642135812046659}
   m_Layer: 0
   m_Name: sci-fi door (1)
   m_TagString: Untagged
@@ -196,8 +195,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5364841675860572377
-MeshCollider:
+--- !u!65 &3134642135812046659
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -214,10 +213,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2088423370225539377, guid: fea3da5973afa9e438362b57b7d2bd46, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 0.08481197, y: 0.08644818, z: 0.03}
+  m_Center: {x: -0.000000014901161, y: -0.0000000037252903, z: -0.013}
 --- !u!1 &1698404297987450764
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,7 +261,7 @@ GameObject:
   - component: {fileID: 5098320296366929472}
   - component: {fileID: 6381755121359388151}
   - component: {fileID: 5538699117623097645}
-  - component: {fileID: 5989250871331225662}
+  - component: {fileID: 5477727506214012853}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -339,8 +337,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5989250871331225662
-MeshCollider:
+--- !u!65 &5477727506214012853
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -357,10 +355,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 3
+  m_Size: {x: 1.0000005, y: 2.79, z: 1.0000006}
+  m_Center: {x: 0.00000007078054, y: -0.00000047683716, z: -0.00000002980235}
 --- !u!1 &5139580087014376909
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,7 +478,7 @@ GameObject:
   - component: {fileID: 7152917651197841126}
   - component: {fileID: 2565066988643995117}
   - component: {fileID: 4185066552510025089}
-  - component: {fileID: 4886649657730935755}
+  - component: {fileID: 2709944570001733910}
   m_Layer: 0
   m_Name: sci-fi door (2)
   m_TagString: Untagged
@@ -557,8 +554,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4886649657730935755
-MeshCollider:
+--- !u!65 &2709944570001733910
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -575,10 +572,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2088423370225539377, guid: fea3da5973afa9e438362b57b7d2bd46, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 0.11, y: 0.08644818, z: 0.03}
+  m_Center: {x: -0.0000000023283064, y: -0.0000000037252903, z: -0.013}
 --- !u!1 &6143245222324059216
 GameObject:
   m_ObjectHideFlags: 0
