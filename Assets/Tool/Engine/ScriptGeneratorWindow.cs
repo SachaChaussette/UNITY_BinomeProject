@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using UnityEditor;
 
 public class ScriptGeneratorWindow
@@ -10,3 +11,4 @@ public class ScriptGeneratorWindow
         EditorWindow.GetWindow<ScriptGeneratorEditor>();
     }
 }
+#endif
