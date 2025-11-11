@@ -43,10 +43,17 @@ public class MovementComponent : MonoBehaviour
         if (!canMove) return;
 
         Vector2 _dir = moveAction.ReadValue<Vector2>();
-        if (_dir == Vector2.zero) return;
+        Vector3 _velocity = owner.Rigidbody.linearVelocity;
+
+        if (_dir == Vector2.zero)
+        {
+            Vector3 _horizontalVelocity = new Vector3(_velocity.x, 0, _velocity.z);
+            _horizontalVelocity = Vector3.Lerp(_horizontalVelocity, Vector3.zero, Time.fixedDeltaTime * 5f);
+            owner.Rigidbody.linearVelocity = new Vector3(_horizontalVelocity.x, _velocity.y, _horizontalVelocity.z);
+            return;
+        }
 
         float _inputMagnitude = Mathf.Clamp01(_dir.magnitude);
-
         float _easedMagnitude = EaseInCirc(_inputMagnitude);
 
         Vector3 _move = (transform.forward * _dir.y + transform.right * _dir.x).normalized * _easedMagnitude * moveSpeed;
