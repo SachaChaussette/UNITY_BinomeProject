@@ -34,9 +34,14 @@ public class MovementComponent : MonoBehaviour
 
     void MoveManual()
     {
+
         if (!canMove) return;
         Vector2 _dir = moveAction.ReadValue<Vector2>();
-        transform.position += (transform.forward * _dir.y + transform.right * _dir.x) * moveSpeed * Time.deltaTime;
+        
+        Vector3 _move = (transform.forward * _dir.y + transform.right * _dir.x) * moveSpeed;
+        Vector3 _velocity = new Vector3(_move.x, owner.Rigidbody.linearVelocity.y, _move.z);
+
+        owner.Rigidbody.linearVelocity = _velocity;
     }
 
     void RotateManual()
