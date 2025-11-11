@@ -7,7 +7,7 @@ public class CameraShake : MonoBehaviour
     [SerializeField] float returnSpeed = 10f;
 
     [Header("Charge Settings")]
-    [SerializeField] float maxChargeOffset = 1.0f; // distance maximale de recul
+    [SerializeField] float maxChargeOffset = 1.0f;
     [SerializeField] float chargeBackSpeed = 2.0f;
 
     Vector3 originalPos;
@@ -48,12 +48,19 @@ public class CameraShake : MonoBehaviour
             float _y = Random.Range(-1f, 1f) * shakeMagnitude;
 
             Vector3 _shakeOffset = new Vector3(_x, _y, 0);
-            transform.localPosition = originalPos + _shakeOffset + Vector3.back * (maxChargeOffset);
+            transform.localPosition = originalPos + _shakeOffset + Vector3.back * maxChargeOffset;
         }
         else
         {
-            Vector3 _targetPos = originalPos + Vector3.back * (maxChargeOffset * currentChargeRatio);
+            float _easedRatio = EaseOutCirc(currentChargeRatio);
+            Vector3 _targetPos = originalPos + Vector3.back * (maxChargeOffset * _easedRatio);
+
             transform.localPosition = Vector3.Lerp(transform.localPosition, _targetPos, Time.deltaTime * chargeBackSpeed);
         }
+    }
+
+    float EaseOutCirc(float _time)
+    {
+        return Mathf.Sqrt(1 - Mathf.Pow(_time - 1, 2));
     }
 }

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -39,14 +40,18 @@ public class MovementComponent : MonoBehaviour
 
     void MoveManual()
     {
-
         if (!canMove) return;
-        Vector2 _dir = moveAction.ReadValue<Vector2>();
-        
-        Vector3 _move = (transform.forward * _dir.y + transform.right * _dir.x) * moveSpeed;
-        Vector3 _velocity = new Vector3(_move.x, owner.Rigidbody.linearVelocity.y, _move.z);
 
-        owner.Rigidbody.linearVelocity = _velocity;
+        Vector2 _dir = moveAction.ReadValue<Vector2>();
+        if (_dir == Vector2.zero) return;
+
+        float _inputMagnitude = Mathf.Clamp01(_dir.magnitude);
+
+        float _easedMagnitude = EaseInCirc(_inputMagnitude);
+
+        Vector3 _move = (transform.forward * _dir.y + transform.right * _dir.x).normalized * _easedMagnitude * moveSpeed;
+
+        owner.Rigidbody.linearVelocity = new Vector3(_move.x, owner.Rigidbody.linearVelocity.y, _move.z);
     }
 
     void RotateManual()
@@ -56,7 +61,12 @@ public class MovementComponent : MonoBehaviour
         transform.eulerAngles += transform.up * _axis.x * rotationSpeed * Time.deltaTime;
     }
 
-    private void OnDrawGizmos()
+    float EaseInCirc(float _t)
+    {
+        return 1 - Mathf.Sqrt(1 - Mathf.Pow(_t, 2));
+    }
+
+private void OnDrawGizmos()
     {
         
     }
