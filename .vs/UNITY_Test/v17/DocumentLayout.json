@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Maxime\\P2\\Github\\UNITY_Test\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|d:\\maxime\\p2\\github\\unity_test\\assets\\binomeprojectfolder\\scripts\\player\\movementcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|solutionrelative:assets\\binomeprojectfolder\\scripts\\player\\movementcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|d:\\maxime\\p2\\github\\unity_test\\assets\\binomeprojectfolder\\scripts\\player\\camerashake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|solutionrelative:assets\\binomeprojectfolder\\scripts\\player\\camerashake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|D:\\Maxime\\P2\\Github\\UNITY_Test\\assets\\binomeprojectfolder\\scripts\\player\\dashcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|solutionrelative:assets\\binomeprojectfolder\\scripts\\player\\dashcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|d:\\maxime\\p2\\github\\unity_test\\assets\\binomeprojectfolder\\scripts\\player\\movementcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|solutionrelative:assets\\binomeprojectfolder\\scripts\\player\\movementcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7565D401-77B9-8507-9C74-F492404DA865}|Assembly-CSharp.csproj|d:\\maxime\\p2\\github\\unity_test\\assets\\binomeprojectfolder\\scripts\\player\\inputcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MovementComponent.cs",
               "DocumentMoniker": "D:\\Maxime\\P2\\Github\\UNITY_Test\\Assets\\BinomeProjectFolder\\Scripts\\Player\\MovementComponent.cs",
               "RelativeDocumentMoniker": "Assets\\BinomeProjectFolder\\Scripts\\Player\\MovementComponent.cs",
-              "ToolTip": "D:\\Maxime\\P2\\Github\\UNITY_Test\\Assets\\BinomeProjectFolder\\Scripts\\Player\\MovementComponent.cs",
-              "RelativeToolTip": "Assets\\BinomeProjectFolder\\Scripts\\Player\\MovementComponent.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAwCQAAAAdAAAAAAAAAA==",
+              "ToolTip": "D:\\Maxime\\P2\\Github\\UNITY_Test\\Assets\\BinomeProjectFolder\\Scripts\\Player\\MovementComponent.cs*",
+              "RelativeToolTip": "Assets\\BinomeProjectFolder\\Scripts\\Player\\MovementComponent.cs*",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAEwCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-11T14:35:44.466Z",
               "EditorCaption": ""
@@ -90,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "DashComponent.cs",
               "DocumentMoniker": "D:\\Maxime\\P2\\Github\\UNITY_Test\\Assets\\BinomeProjectFolder\\Scripts\\Player\\DashComponent.cs",
               "RelativeDocumentMoniker": "Assets\\BinomeProjectFolder\\Scripts\\Player\\DashComponent.cs",
@@ -103,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CameraShake.cs",
               "DocumentMoniker": "D:\\Maxime\\P2\\Github\\UNITY_Test\\Assets\\BinomeProjectFolder\\Scripts\\Player\\CameraShake.cs",
               "RelativeDocumentMoniker": "Assets\\BinomeProjectFolder\\Scripts\\Player\\CameraShake.cs",
