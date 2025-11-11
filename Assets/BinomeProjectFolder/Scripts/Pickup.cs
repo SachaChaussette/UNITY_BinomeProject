@@ -5,13 +5,16 @@ public class Pickup : MonoBehaviour
 {
     [SerializeField] float currentTime = 0.0f, maxTime = 2.0f;
     [SerializeField] float floatingHeight = 0.5f;
+    [SerializeField] float force = 10.0f;
     [SerializeField] bool isClockwise = false;
     [SerializeField] AnimationCurve curve = new AnimationCurve();
-    Vector3 basePos = Vector3.zero;
+    [SerializeField] Vector3 basePos = Vector3.zero;
+    [SerializeField] SphereCollider sphereCollider = null;
 
     void Start()
     {
         basePos = transform.position;
+        sphereCollider = GetComponent<SphereCollider>();
     }
 
     void Update()
@@ -62,5 +65,15 @@ public class Pickup : MonoBehaviour
         {
             return _n1 * (_t -= 2.625f / _d1) * _t + 0.984375f;
         }
+    }
+
+    private void OnTriggerEnter(Collider _other)
+    {
+        if (!_other) return;
+
+        Player _player = _other.GetComponent<Player>();
+        if (!_player) return;
+
+        _player.Rigidbody.AddForce((_player.transform.forward + _player.transform.up / 2.0f).normalized * force, ForceMode.Acceleration);
     }
 }

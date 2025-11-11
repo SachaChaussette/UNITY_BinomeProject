@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class MovementComponent : MonoBehaviour
@@ -13,16 +14,20 @@ public class MovementComponent : MonoBehaviour
 
     [SerializeField] bool canMove = true;
 
+    [SerializeField] float groundDist = 1.0f;
+    [SerializeField] LayerMask platformLayer = 0;
+
     public void SetCanMove(bool _canMove)
     {
         if (canMove == _canMove) return;
         canMove = _canMove;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         MoveManual();
         RotateManual();
+        CheckPlatform();
     }
 
     public void Init(InputAction _moveAction, InputAction _rotateAction)
@@ -54,5 +59,14 @@ public class MovementComponent : MonoBehaviour
     private void OnDrawGizmos()
     {
         
+    }
+
+    void CheckPlatform()
+    {
+        if(Physics.Raycast(transform.position, -transform.up, out RaycastHit _hit, groundDist, platformLayer))
+        {
+            Rigidbody _rb = _hit.transform.GetComponent<Rigidbody>();
+            owner.Rigidbody.linearVelocity += _rb.linearVelocity;
+        }
     }
 }
