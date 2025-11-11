@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
@@ -40,5 +41,7 @@ public class Player : MonoBehaviour
         dash.Init(inputs.DashAction);
         if (!jump) return;
         jump.Init(inputs.JumpAction);
+
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }

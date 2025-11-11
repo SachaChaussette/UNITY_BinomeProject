@@ -3921,7 +3921,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1510323083825461979, guid: d09f6a079b8dab84f8183ab91a916445, type: 3}
       propertyPath: force
-      value: 1000
+      value: 2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6082,7 +6082,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3136705438767587533, guid: 58f494d07c5e85645bffd0af0d4f2d57, type: 3}
       propertyPath: force
-      value: 20
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3136705438767587533, guid: 58f494d07c5e85645bffd0af0d4f2d57, type: 3}
       propertyPath: cameraShake
@@ -6090,7 +6090,7 @@ PrefabInstance:
       objectReference: {fileID: 303010903}
     - target: {fileID: 3423062635234006027, guid: 58f494d07c5e85645bffd0af0d4f2d57, type: 3}
       propertyPath: moveSpeed
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3423062635234006027, guid: 58f494d07c5e85645bffd0af0d4f2d57, type: 3}
       propertyPath: platformLayer.m_Bits
@@ -6098,15 +6098,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5069144938420431454, guid: 58f494d07c5e85645bffd0af0d4f2d57, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.869
+      value: 4.128
       objectReference: {fileID: 0}
     - target: {fileID: 5069144938420431454, guid: 58f494d07c5e85645bffd0af0d4f2d57, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.93
+      value: 1.02
       objectReference: {fileID: 0}
     - target: {fileID: 5069144938420431454, guid: 58f494d07c5e85645bffd0af0d4f2d57, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.21
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5069144938420431454, guid: 58f494d07c5e85645bffd0af0d4f2d57, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9870,9 +9870,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrounded: 0
-  maxDist: 30
+  maxDist: 200
   currentTime: 0
-  maxTime: 4
+  maxTime: 5
   canvasFade: {fileID: 860323519}
 --- !u!114 &1891109596
 MonoBehaviour:
