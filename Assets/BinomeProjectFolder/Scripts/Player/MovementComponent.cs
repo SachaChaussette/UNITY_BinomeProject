@@ -34,14 +34,15 @@ public class MovementComponent : MonoBehaviour
 
     void MoveManual()
     {
+        if (!canMove) return; // bloque tout mouvement pendant le dash
 
-        if (!canMove) return;
         Vector2 _dir = moveAction.ReadValue<Vector2>();
-        
-        Vector3 _move = (transform.forward * _dir.y + transform.right * _dir.x) * moveSpeed;
-        Vector3 _velocity = new Vector3(_move.x, owner.Rigidbody.linearVelocity.y, _move.z);
+        if (_dir == Vector2.zero) return;
 
-        owner.Rigidbody.linearVelocity = _velocity;
+        Vector3 _move = (transform.forward * _dir.y + transform.right * _dir.x) * moveSpeed;
+
+        // Appliquer seulement le mouvement contrôlé, sans toucher à la vitesse verticale
+        owner.Rigidbody.linearVelocity = new Vector3(_move.x, owner.Rigidbody.linearVelocity.y, _move.z);
     }
 
     void RotateManual()

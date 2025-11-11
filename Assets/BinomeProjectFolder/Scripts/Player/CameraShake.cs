@@ -54,6 +54,7 @@ public class CameraShake : MonoBehaviour
         {
             Vector3 _targetPos = originalPos + Vector3.back * (maxChargeOffset * currentChargeRatio);
             transform.localPosition = Vector3.Lerp(transform.localPosition, _targetPos, Time.deltaTime * chargeBackSpeed);
+            // Avec EaseOut
         }
     }
 }

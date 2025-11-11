@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System.Collections;
 
 public class DashComponent : MonoBehaviour
 {
@@ -9,33 +8,42 @@ public class DashComponent : MonoBehaviour
 
     InputAction dashAction = null;
 
-    [SerializeField] bool canDash = true, isCharging = false;
-    [SerializeField] float currentTime = 0.0f, maxTime = 3.0f;
+    [SerializeField] bool canDash = true;
+    [SerializeField] bool isCharging = false;
+    [SerializeField] bool isDashing = false;
+
+    [SerializeField] float currentTime = 0.0f;
+    [SerializeField] float maxTime = 3.0f;
     [SerializeField] float force = 10.0f;
+
+    [SerializeField] float dashEndSpeedThreshold = 2.0f;
     [SerializeField] CameraShake cameraShake;
 
+    public bool IsFullCharge() => currentTime >= maxTime;
 
-
-    public bool IsFullCharge()
-    {
-        return currentTime >= maxTime;
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        UpdateTime();
-        float _chargeRatio = currentTime / maxTime;
-        if (!cameraShake) return;
-        cameraShake.SetChargeRatio(_chargeRatio);
+        UpdateCharge();
 
-        if (IsFullCharge())
+        if (isDashing)
         {
-            cameraShake.StartShake(.4f);
+            float _currentSpeed = new Vector3(owner.Rigidbody.linearVelocity.x, 0, owner.Rigidbody.linearVelocity.z).magnitude;
+            if (_currentSpeed <= dashEndSpeedThreshold)
+            {
+                EndDash();
+            }
         }
-        else
+
+        // Gestion du feedback visuel
+        float _chargeRatio = currentTime / maxTime;
+        if (cameraShake)
         {
-            cameraShake.StopShake();
+            cameraShake.SetChargeRatio(_chargeRatio);
+
+            if (IsFullCharge())
+                cameraShake.StartShake(.4f);
+            else
+                cameraShake.StopShake();
         }
     }
 
@@ -44,40 +52,54 @@ public class DashComponent : MonoBehaviour
         owner = GetComponent<Player>();
         dashAction = _dashAction;
         dashAction.performed += StartDash;
-        dashAction.canceled += RealisedDash;
+        dashAction.canceled += ReleaseDash;
     }
 
     void StartDash(InputAction.CallbackContext _context)
     {
-        if (!canDash) return;
+        if (!canDash || isDashing) return;
         owner.Movement.SetCanMove(false);
         isCharging = true;
         currentTime = 0;
     }
 
-    void RealisedDash(InputAction.CallbackContext _context)
+    void ReleaseDash(InputAction.CallbackContext _context)
     {
+        if (!isCharging) return;
         Dash(currentTime);
     }
 
     public void Dash(float _currentTime)
     {
-        owner.Movement.SetCanMove(true);
         isCharging = false;
+        isDashing = true;
+        canDash = false;
 
-        owner.Rigidbody.AddForce(owner.transform.forward * (force * EaseOutCirc(_currentTime / maxTime)), ForceMode.Impulse);
+        float _dashPower = force * EaseOutCirc(_currentTime / maxTime);
+
+        Vector3 _dashDir = owner.transform.forward;
+        Vector3 _velocity = owner.Rigidbody.linearVelocity;
+        _velocity.y = 0f;
+        owner.Rigidbody.linearVelocity = _velocity;
+
+        owner.Rigidbody.AddForce(_dashDir * _dashPower, ForceMode.Impulse);
         currentTime = 0;
     }
 
-    void UpdateTime()
+    void EndDash()
+    {
+        isDashing = false;
+        canDash = true;
+        owner.Movement.SetCanMove(true);
+    }
+
+    void UpdateCharge()
     {
         if (!isCharging) return;
-        currentTime += Time.deltaTime;
 
+        currentTime += Time.deltaTime;
         if (currentTime >= maxTime)
-        {
             currentTime = maxTime;
-        }
     }
 
     public float EaseOutCirc(float _time)
