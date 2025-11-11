@@ -102,7 +102,7 @@ public class DashComponent : MonoBehaviour
             currentTime = maxTime;
     }
 
-    public float EaseOutCirc(float _time)
+    float EaseOutCirc(float _time)
     {
         return Mathf.Sqrt(1 - Mathf.Pow(_time - 1, 2));
     }
