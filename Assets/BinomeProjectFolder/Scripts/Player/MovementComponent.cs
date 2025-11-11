@@ -13,6 +13,8 @@ public class MovementComponent : MonoBehaviour
 
     [SerializeField] bool canMove = true;
 
+    [SerializeField] Rigidbody rb = null;
+
     public void SetCanMove(bool _canMove)
     {
         if (canMove == _canMove) return;
@@ -30,13 +32,20 @@ public class MovementComponent : MonoBehaviour
         owner = GetComponent<Player>();
         moveAction = _moveAction;
         rotateAction = _rotateAction;
+        rb = GetComponent<Rigidbody>();
     }
 
     void MoveManual()
     {
         if (!canMove) return;
         Vector2 _dir = moveAction.ReadValue<Vector2>();
-        transform.position += (transform.forward * _dir.y + transform.right * _dir.x) * moveSpeed * Time.deltaTime;
+        //transform.position += (transform.forward * _dir.y + transform.right * _dir.x) * moveSpeed * Time.deltaTime;
+
+        if (!rb) return;
+        Vector3 _move = (transform.forward * _dir.y + transform.right * _dir.x) * moveSpeed;
+        Vector3 _velocity = new Vector3(_move.x, rb.linearVelocity.y, _move.z);
+
+        rb.linearVelocity = _velocity;
     }
 
     void RotateManual()

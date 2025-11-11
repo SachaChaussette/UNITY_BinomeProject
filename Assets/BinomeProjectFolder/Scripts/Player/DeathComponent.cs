@@ -6,12 +6,21 @@ public class DeathComponent : MonoBehaviour
     [SerializeField] bool isGrounded = false;
     [SerializeField] float maxDist = 10.0f;
     [SerializeField] float currentTime = 0.0f, maxTime = 5.0f;
+    [SerializeField] CanvasFade canvasFade = null;
 
-    void Start()
+    private void OnEnable()
     {
-        
+        if (!canvasFade) return;
+
+        canvasFade.OnFadeFinished += ReloadLevel;
     }
 
+    private void OnDisable()
+    {
+        if (!canvasFade) return;
+
+        canvasFade.OnFadeFinished -= ReloadLevel;
+    }
 
     void Update()
     {
@@ -22,7 +31,6 @@ public class DeathComponent : MonoBehaviour
             return;
         }
         Reset();
-
     }
 
     void Reset()
@@ -50,11 +58,17 @@ public class DeathComponent : MonoBehaviour
 
     void Die()
     {
-        ReloadLevel();
+        if (!canvasFade) return;
+
+        canvasFade.FadeIn = true;
     }
 
     void ReloadLevel()
     {
+        if (!canvasFade) return;
+
+        if (!canvasFade.FadeIn) return;
+
         Scene _currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(_currentScene.name);
     }
