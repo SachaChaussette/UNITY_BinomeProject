@@ -34,7 +34,6 @@ public class DashComponent : MonoBehaviour
             }
         }
 
-        // Gestion du feedback visuel
         float _chargeRatio = currentTime / maxTime;
         if (cameraShake)
         {
